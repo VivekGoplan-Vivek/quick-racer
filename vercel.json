@@ -1,13 +1,12 @@
-
 {
- "routes":[
-  {
-   "src":"/api/leaderboard",
-   "dest":"/api/leaderboard.js"
-  },
-  {
-   "src":"/(.*)",
-   "dest":"/public/$1"
-  }
- ]
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
+    }
+  ]
 }
